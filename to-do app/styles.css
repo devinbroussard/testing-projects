@@ -1,7 +1,48 @@
-body {
-  background-color: #24292e;
+html {
+  font-family: 'Work Sans', sans-serif;
 }
 
-.container {
-  background-color: lightgrey;
+body {
+  background-color: #24292e;
+  color: rgb(220, 220, 220);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-container {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.todo-input-container {
+  position: relative;
+}
+
+.todo-input {
+  padding-right: 30px; /* Adjust as needed to make space for the icon */
+  height: 1.5rem;
+}
+
+.todo-input-icon {
+  position: absolute;
+  top: 50%;
+  right: 5px; /* Adjust as needed for the desired spacing from the right */
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #7b8590;
+}
+
+.todo-input-icon:hover {
+  color: #3d4146;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.rounded {
+  border: none;
+  border-radius: 0.3rem;
 }
